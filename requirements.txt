@@ -1,0 +1,11 @@
+torch
+pandas
+json
+re
+scikit-learn
+transformers
+random
+numpy
+argparse
+
+## if run the code in Generate file, we also install lightgbm dependenct
