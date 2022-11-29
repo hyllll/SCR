@@ -19,7 +19,7 @@ def coat_loader():
     return contexts
 
 def movie_loader():
-    with open("./data/movie/dialogue_info.json",'r') as load_f:
+    with open("./data/ml-1m/dialogue_info.json",'r') as load_f:
         movie = json.load(load_f)
     contexts = []
     for _, dialogue in movie.items():
