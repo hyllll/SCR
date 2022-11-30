@@ -24,7 +24,7 @@ if __name__ == "__main__":
     parser.add_argument('--eval_num', 
                         type=int, 
                         default=400, 
-                        help='top number of recommend list')
+                        help='the number of dialogues')
     args = parser.parse_args()
     cur_time = time.strftime("%Y-%m-%d-%H_%M_%S",time.localtime(time.time()))[5:]
     data = load_data(args.dataset)
