@@ -58,5 +58,5 @@ if __name__ == "__main__":
     save_dir = f'./res/{args.dataset}/'
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
-    with open(save_dir + f'{cur_time}_results.json', 'w') as f:
+    with open(save_dir + f'{cur_time}_{args.dataset}_results.json', 'w') as f:
         json.dump(fed_scores, f)

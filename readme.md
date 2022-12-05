@@ -19,6 +19,7 @@ pip3 install -r requirements.txt
     ```python3 evaluate.py --dataset='xxx' --eval_num=2000```
     
     The `xxx` option is `coat`, `ml-1m`, `opendialKG` and `redial`
+3. The results are saved in ```./Evaluate/res/```
 
 
 
