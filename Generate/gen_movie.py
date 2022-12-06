@@ -7,6 +7,7 @@ import os
 from collections import defaultdict
 from movie_utils import *
 from config.movie_pattern import start_pattern, agent_pattern, user_pattern
+from config.thanks_pattern import thanks_agent, thanks_user
 from movie_attr import generate_country_dialogue, generate_genre_dialogue, generate_director_dialogue, generate_actor_dialogue
 
 
@@ -186,7 +187,8 @@ if __name__ == '__main__':
             for i, val in enumerate(tmp_name):
                 new_dialogue["content"][val] = tmp_dia[i]
             start_index = end_index
-
+        new_dialogue["content"]["thanks_user"] = random.choice(thanks_user)
+        new_dialogue["content"]["thanks_agent"] = random.choice(thanks_agent)
         dialogue_info[dialogue_id] = new_dialogue
         dialogue_id = dialogue_id + 1
     

@@ -53,6 +53,18 @@ agent_pattern = {
         },
         {
             "tag":['00'],
+            "nl": "What kind of coats do you have in mind?"
+        },
+        {
+            "tag":['00'],
+            "nl": "What kind of coats are interested in?"
+        },
+        {
+            "tag":['00'],
+            "nl": "What kind of coats interest you?"
+        },
+        {
+            "tag":['00'],
             "nl": "What style of coats do you like?"
         },
         {
@@ -87,6 +99,11 @@ agent_pattern = {
             "tag":['10'],
             "slots":["jacket"],
             "nl": "Do you like $jacket$ coats?"
+        },
+        {
+            "tag":['10'],
+            "slots":["jacket"],
+            "nl": "Have you worn any $jacket$ coats?"
         },
         {
             "tag":['10'],
@@ -148,6 +165,18 @@ agent_pattern = {
         {
             "tag":['00'],
             "nl": "What color coats do you like?"
+        },
+        {
+            "tag":['00'],
+            "nl": "What color do you have in mind?"
+        },
+        {
+            "tag":['00'],
+            "nl": "What color are interested in?"
+        },
+        {
+            "tag":['00'],
+            "nl": "What color interest you?"
         },
         {
             "tag":['00'],
@@ -344,6 +373,11 @@ user_pattern = {
             "nl":"$jacket$."
         },
         {
+            "tag":['00', '01', '20', '30'],
+            "slots":["jacket"],
+            "nl":"I'm in the mood to $jacket$ coats."
+        },
+        {
             "tag":['00', '20', '30'],
             "slots":["jacket"],
             "nl":"I like coats that are $jacket$."
@@ -351,7 +385,27 @@ user_pattern = {
         {
             "tag":['00', '20', '30'],
             "slots":["jacket"],
-            "nl":"I like $jacket$."
+            "nl":"I love $jacket$ coats."
+        },
+        {
+            "tag":['00', '20', '30'],
+            "slots":["jacket"],
+            "nl":"I do enjoy $jacket$."
+        },
+        {
+            "tag":['00', '20', '30'],
+            "slots":["jacket"],
+            "nl":"I do enjoy $jacket$."
+        },
+        {
+            "tag":['00', '20', '30'],
+            "slots":["jacket"],
+            "nl":"I enjoy most $jacket$ coats."
+        },
+        {
+            "tag":['00', '20', '30'],
+            "slots":["jacket"],
+            "nl":"I'm really big on $jacket$ coats."
         },
         {
             "tag":['00', '20', '30'],
@@ -415,6 +469,10 @@ user_pattern = {
         },
         {
             "tag":['10'],
+            "nl":"Yeah, definitely. I like that one."
+        },
+        {
+            "tag":['10'],
             "nl":"Yeah, I'm fond of it."
         },
         {
@@ -436,6 +494,14 @@ user_pattern = {
         {
             "tag":['10', '11'],
             "nl":"Great, I like it."
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"Ooh that seems great!"
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"That sounds great."
         },
         {
             "tag":['10', '11'],
@@ -465,7 +531,15 @@ user_pattern = {
         },
         {
             "tag":['10'],
+            "nl":"No, I do not like that kind of coats."
+        },
+        {
+            "tag":['10'],
             "nl":"No, it does not appeal to me."
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"I'm not fond of it."
         },
         {
             "tag":['10', '11'],
@@ -506,6 +580,10 @@ user_pattern = {
         {
             "tag":['20', '30'],
             "nl":"I don't like them."
+        },
+        {
+            "tag":['20', '30'],
+            "nl":"I'm not fond of them."
         },
         {
             "tag":['20', '30'],
@@ -560,6 +638,31 @@ user_pattern = {
             "tag":['00','20', '30'],
             "slots":["color"],
             "nl":"I like $color$."
+        },
+        {
+            "tag":['00','20', '30'],
+            "slots":["color"],
+            "nl":"I'm in the mood to $color$."
+        },
+        {
+            "tag":['00','20', '30'],
+            "slots":["color"],
+            "nl":"I love $color$ coats."
+        },
+        {
+            "tag":['00','20', '30'],
+            "slots":["color"],
+            "nl":"I do enjoy $color$."
+        },
+        {
+            "tag":['00','20', '30'],
+            "slots":["color"],
+            "nl":"I enjoy most $color$ coats."
+        },
+        {
+            "tag":['00','20', '30'],
+            "slots":["color"],
+            "nl":"I'm really big on $color$ coats."
         },
         {
             "tag":['00', '01', '20', '30'],
@@ -622,6 +725,10 @@ user_pattern = {
         },
         {
             "tag":['10'],
+            "nl":"Yeah, definitely. I like that one."
+        },
+        {
+            "tag":['10'],
             "nl":"Yeah, I'm really into it."
         },
         {
@@ -639,6 +746,14 @@ user_pattern = {
         {
             "tag":['10', '11'],
             "nl":"Great, I like it."
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"Ooh that seems great!"
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"That sounds great."
         },
         {
             "tag":['10', '11'],
@@ -668,11 +783,19 @@ user_pattern = {
         },
         {
             "tag":['10'],
+            "nl":"No, I do not like that color."
+        },
+        {
+            "tag":['10'],
             "nl":"No, it does not appeal to me."
         },
         {
             "tag":['10', '11'],
             "nl":"I don't like it."
+        },
+        {
+            "tag":['10', '11'],
+            "nl":"I'm not fond of it."
         },
         {
             "tag":['10', '11'],
@@ -744,6 +867,10 @@ user_pattern = {
         },
         {
             "tag":['20', '30'],
+            "nl":"I'm not fond of them."
+        },
+        {
+            "tag":['20', '30'],
             "nl":"No."
         },
     ],
@@ -760,4 +887,16 @@ start_pattern = [
     "Hi, I need a coat.",
     "Hi, I'm dying for a coat.",
     "Hi, I'm trying to find a coat.",
+    "Hi there, I'm looking for coat recommendations.",
+    "Hello, what coats would you suggest?",
+    "Which coats do you suggest?",
+    "Hi! I'm looking for some suggestions for good coats.What would you recommend?",
+    "Hi! I am looking for a coat.",
+    "Hi, do you have any coat suggestions for me?",
+    "Hey, could you suggest some coats for me?",
+    "Hi there. Do you think you could suggest some coats for me today?",
+    "Hey could you help me find a coat?",
+    "Hi, could you help me find a good coat?",
+    "Could you please help me find a good coat?",
+    "Hi I am looking for a good new coat."
 ]

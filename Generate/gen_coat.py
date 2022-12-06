@@ -7,6 +7,7 @@ import os
 from coat_utils import *
 from collections import defaultdict
 from config.coat_pattern import start_pattern, agent_pattern, user_pattern
+from config.thanks_pattern import thanks_agent, thanks_user
 from coat_attr import generate_gender_dialogue, generate_jacket_dialogue, generate_color_dialogue
 
 def load_data():
@@ -154,7 +155,8 @@ if __name__ == '__main__':
             for i, val in enumerate(tmp_name):
                 new_dialogue["content"][val] = tmp_dia[i]
             start_index = end_index
-
+        new_dialogue["content"]["thanks_user"] = random.choice(thanks_user)
+        new_dialogue["content"]["thanks_agent"] = random.choice(thanks_agent)
         dialogue_info[dialogue_id] = new_dialogue
         dialogue_id = dialogue_id + 1
 
