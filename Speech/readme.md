@@ -15,3 +15,14 @@
     ```
     mkdir ./vits_lib/pretrain/
     ```
+
+# Run
+1. Generate speech audio
+    ```
+    python3 inference.py --dataset='xxx'
+    ```
+    ```xxx``` is ```coat``` and ```ml-1m```
+2. The results are saved in ```./speech_res/``` 
+
+# Acknowledgement
+Refer to the [vits repo](https://github.com/jaywalnut310/vits) to improve the code.

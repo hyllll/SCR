@@ -141,7 +141,7 @@ def generate_user_speech(user, text, sid, speaker_speed):
         x_tst_lengths = torch.LongTensor([stn_tst.size(0)]).cuda()
         sid = torch.LongTensor([sid]).cuda()
         audio = net_user.infer(x_tst, x_tst_lengths, sid=sid, noise_scale=.667, noise_scale_w=0.8, length_scale=speaker_speed)[0][0,0].data.cpu().float().numpy()
-    audio = ipd.Audio(audio, rate=net_user.data.sampling_rate, normalize=False)
+    audio = ipd.Audio(audio, rate=hps_user.data.sampling_rate, normalize=False)
 
     return audio
 
