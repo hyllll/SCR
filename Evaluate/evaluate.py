@@ -20,7 +20,7 @@ if __name__ == "__main__":
     parser.add_argument('--dataset', 
                         type=str, 
                         default='coat', 
-                        help='select dataset, option: coat, ml-1m, opendialKG, redial')
+                        help='select dataset, option: coat, ml-1m, opendialKG, redial, inspire')
     parser.add_argument('--eval_num', 
                         type=int, 
                         default=400, 
