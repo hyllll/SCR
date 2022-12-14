@@ -32,7 +32,8 @@ if __name__ == "__main__":
     print("model load successful")
 
     scores = []
-    data = random.sample(data, args.eval_num)
+    if args.dataset != 'inspire':
+        data = random.sample(data, args.eval_num)
     num = 0
     for conversation in data:
         scores.append(fed.evaluate(conversation, model, tokenizer))
