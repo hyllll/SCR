@@ -16,9 +16,11 @@ pip3 install -r requirements.txt
 1. ```cd ./Evaluate/```
 2.  Evaluate the quality of the dialogue:
 
-    ```python3 evaluate.py --dataset='xxx' --eval_num=2000```
+    ```python3 evaluate.py --dataset='inspire' --eval_num=2000```
+
+    ```python3 evaluate.py --dataset='ml-1m_thanks' --eval_num=2000```
     
-    The `xxx` option are `inspire` and `ml-1m_thanks`
+    <!-- The `xxx` option are `inspire` and `ml-1m_thanks` -->
 3. The results are saved in ```./Evaluate/res/```
 
 
